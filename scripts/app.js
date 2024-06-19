@@ -3,7 +3,8 @@ console.log('Lab 7');
 const numberInput = document.querySelector("#numberInput");
 
 numberInput.addEventListener("input", function() {
-    if (numberValue <= -10 || numberValue >= 10) {
+    const input = parseInt(numberInput.value)
+    if (input <= -10 || input >= 10) {
         alert("The number should be between -10 and 10");
     }
 });
