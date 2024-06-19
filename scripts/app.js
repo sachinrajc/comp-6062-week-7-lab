@@ -1,22 +1,19 @@
-console.log('Here we are :)');
-const numberInput = document.querySelector('#numberInput')
-numberInput.addEventListener('input',function() {
-    if (numberInput.value <= -10 || numberInput.value>=10){
-        alert('The number should be between -10 and 10');
+console.log('Lab 7');
+
+const numberInput = document.querySelector("#numberInput");
+
+numberInput.addEventListener("input", function() {
+    if (numberValue <= -10 || numberValue >= 10) {
+        alert("The number should be between -10 and 10");
     }
 });
 
 const fruit = {
-    name: 'Apple',
-    color: 'Red',
-    taste: 'Sweet'
+    name: "Apple",
+    color: "Red",
+    taste: "Sweet"
 };
 
-const fruitName = document.querySelector('#fruitName');
-const fruitColor = document.querySelector('#fruitColor');
-const fruitTaste = document.querySelector('#fruitTaste');
-
-// Use innerHTML to set the string, use Template Literals for each to combine the fruit field name and the value
-fruitName.innerHTML = `Name: ${fruit.name}`;
-fruitColor.innerHTML = `Color: ${fruit.color}`;
-fruitTaste.innerHTML = `Taste: ${fruit.taste}`;
+document.querySelector("#fruitName").innerHTML = `Name: ${fruit.name}`;
+document.querySelector("#fruitColor").innerHTML = `Color: ${fruit.color}`;
+document.querySelector("#fruitTaste").innerHTML = `Taste: ${fruit.taste}`
